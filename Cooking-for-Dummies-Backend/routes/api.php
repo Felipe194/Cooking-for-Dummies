@@ -12,7 +12,8 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
+Route::get('platos/consultar','ServicioPlato@ConsultarPlato');
+Route::get('platos/ingresar','ServicioPlato@IngresarPlato');
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });

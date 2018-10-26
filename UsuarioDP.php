@@ -26,6 +26,13 @@ class usuarioDP extends Controller
 
     return $registro;
   }
+  
+  public function delete($id)
+	{
+		$row = \App\student::findOrfail($id);
+		$row->update();
+		return 204; 
+	}
 
 }
 ?>

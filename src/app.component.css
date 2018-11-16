@@ -1,0 +1,50 @@
+h1 {
+color: red;
+}
+h2 {
+color: blue;
+text-align: center;
+}
+.header{
+    /*background-color: #d91414;*/
+    background-color: #bf9143;
+    color:#d9d11d;
+
+}
+
+.header a{
+  text-decoration: none;
+}
+
+.nave {
+  font: 50px;
+  text-align: right;
+
+  display:flex;
+  /*align-items: center;*/
+}
+.na {
+font: 10px;
+text-align: left;
+}
+
+.centrar {
+font: 10px;
+text-align: center;
+background-color: #ffffff;
+}
+
+.pie {
+
+font: 10px;
+
+text-align: center;
+
+background-color: #272ecf;
+
+}
+.logoIzquier{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}

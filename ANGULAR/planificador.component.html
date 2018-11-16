@@ -1,0 +1,24 @@
+<div>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Special Elite">
+    <div align="center">
+      <br>
+      <nav>
+        <TABLE border="0" cellpadding="0" cellspacing="0">
+        <TR><a id="navegacion" routerLink="/platos">RECETAS</a><TD bgcolor="#D6DD21" width="2"></TD>
+        <TD width="8"></TD>
+        <TD><BR></TD><a id="navegacionActiva">PLANIFICADOR</a></TR>
+        </TABLE>
+      </nav>
+    </div>
+    <br>
+    <div>
+
+      <h5 id="ingredienteTitulo">INGREDIENTES:</h5>
+      <hr  style="border:1px dotted #88C33E; width:90%" >
+    </div>
+    <div *ngFor="let ingrediente of ingredientes">
+      <ul style="list-style-type: disc">
+        <li id="listaIngredientes"><img src="/assets/imagenes/punto.png ">{{ingrediente.nombre}}  {{ingrediente.cantidad}}</li>
+      </ul>
+    </div>
+</div>

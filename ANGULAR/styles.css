@@ -1,5 +1,138 @@
-button.boton {
-  font: 15px;
-  color: red;
-  float: right;
+@media(max-width:2000px){
+    button.boton {
+      font-size: 30px;
+      font-family: Special Elite;
+      color: #88C33E;
+      background: black;
+      position: absolute;
+      top:500px;
+      left:650px;
+      border-radius: 50px;
+      border-color: #88C33E;
+     }
 }
+@media(max-device-width:480px){
+  button.boton {
+    font-size: 20px;
+    font-family: Special Elite;
+    color: #88C33E;
+    background: black;
+    position: absolute;
+    top:400px;
+    left:120px;
+    border-radius: 50px;
+    border-color: #88C33E;
+
+  }
+
+}
+
+#contenedor{
+  background-color: black;
+  align-items: center;
+
+
+}
+#imagen{
+  display: block;
+  margin: auto;
+}
+h1{
+  color:#88C33E;
+  font-family: Special Elite;
+  text-align: center;
+  font-size: 60;
+}
+input.ingreso{
+  display:block;
+  border-radius: 10px;
+  padding: 5px;
+  background-color:#E9E8E8;
+  width:100%;
+}
+label.texto{
+  color: gray;
+  font-weight: bold;
+  font-family: cursive;
+  font-size: 22px;
+}
+#ok{
+  color: white;
+  background: #88C33E;
+  height: 55px;
+  width: 75px;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 15px;
+  align:center;
+}
+h5{
+  font-family: cursive;
+  color:#88C33E;
+}
+
+
+
+
+#navegacion{
+  color:gray;
+  font-family: Special Elite;
+  text-align: center;
+  font-size: 28px;
+}
+#navegacionActiva{
+  color:#D6DD21;
+  font-family: Special Elite;
+  text-align: center;
+  font-size: 28px;
+}
+
+ul {
+    align: center;
+    display: inline;
+    padding: 0;
+    overflow: hidden;
+    color: #333;
+
+}
+#caja{
+  text-align: center;
+  width: 240px;
+  height: 75px;
+
+  background-image: url('/assets/imagenes/titulo.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+
+}
+#texto{
+  font-weight: bold;
+  padding-top: 15%;
+  padding-bottom: 50%;
+}
+#imagenComida{
+  width: 350px;
+  height: 250px;
+  position: relative;
+  border-radius: 30px;
+  padding-left: 20px;
+}
+
+
+
+
+
+#ingredienteTitulo{
+  padding-left: 30px;
+}
+#listaIngredientes{
+  padding-left: 30px;
+  color: gray;
+}
+li{
+	        color: black;
+	}
+	li span{
+		color: blue;
+	}

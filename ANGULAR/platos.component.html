@@ -1,0 +1,22 @@
+<div>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Special Elite">
+    <div align="center">
+      <br>
+      <nav>
+        <TABLE border="0" cellpadding="0" cellspacing="0">
+        <TR><a id="navegacionActiva">RECETAS</a><TD bgcolor="#D6DD21" width="2"></TD>
+        <TD width="8"></TD>
+        <TD><BR></TD><a id="navegacion" routerLink="/planificador">PLANIFICADOR</a></TR>
+        </TABLE>
+      </nav>
+    </div>
+    <br>
+    <div *ngFor="let plato of platos">
+      <div id="caja" >
+        <p id="texto" >{{plato.nombre}}</p>
+      </div>
+      <img id="imagenComida" src="{{plato.rutaImagen}}">
+    </div>
+
+
+</div>

@@ -8,21 +8,49 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { MatCardModule, MatCardImage } from '@angular/material/card';
 import {Component} from '@angular/core';
+import { SocialLoginModule } from 'angularx-social-login';
+import { AuthServiceConfig, GoogleLoginProvider, FacebookLoginProvider, LinkedInLoginProvider  } from 'angularx-social-login';
+import { LoginComponent } from './login/login.component';
+
+const config = new AuthServiceConfig([
+  {
+    id: GoogleLoginProvider.PROVIDER_ID,
+    provider: new GoogleLoginProvider('Google-OAuth-Client-Id')
+  },
+  {
+    id: FacebookLoginProvider.PROVIDER_ID,
+    provider: new FacebookLoginProvider('Facebook-App-Id')
+  },
+]);
+
+export function provideConfig() {
+  return config;
+}
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    LoginComponent,
     MenuTresComidasComponent
+
   ],
   imports: [
     BrowserModule,
     MatToolbarModule,
     MatCardModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    SocialLoginModule
     ],
-    providers: [],
+    providers: [
+      {
+        provide: AuthServiceConfig,
+        useFactory: provideConfig,
+      }
+    ],
     bootstrap: [AppComponent]
-    })
-export class AppModule {}
+  })
+  export class AppModule { }
+
 
 

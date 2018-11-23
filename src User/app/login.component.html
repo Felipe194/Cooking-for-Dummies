@@ -1,0 +1,9 @@
+form action="#">
+  <input type="user"  class="input" [(ngModel)]="user" required name="user"/>
+  <input type="submit" class="submit" (click)="emailValidate()" />
+</form>
+<div></div>
+
+<div *ngIf="instagramUrl">
+  <img [src]="instagramUrl"  (load)="instagramUrlSuccess($event)" (error)="instagramUrlError($event)"/>
+</div>

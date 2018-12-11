@@ -1,0 +1,22 @@
+<div >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Special Elite">
+  <br>
+  <br>
+    <div *ngFor="let plato of platos">
+      <div *ngIf="plato.id==codigo">
+        <div>
+          <h4 id="tituloPlato">{{plato.nombre}}</h4>
+          <hr  style="border:1px dotted #88C33E; width:90%" >
+        </div>
+        <img id="imagenComida" src="{{plato.rutaImagen}}">
+        <br>
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/LdIXHcZRlCk"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+    <br>
+    <div>
+
+</div>
